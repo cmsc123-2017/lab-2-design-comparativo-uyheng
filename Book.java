@@ -37,8 +37,29 @@ class Book {
   }
  
   
-  // TODO design a function publishedBefore that accepts a Book and
-  //   returns true if this Book was published before the other 
-  
-  
+  // TODO 
+  // Book -> boolean 
+  //design a function publishedBefore that accepts a Book and
+  // returns true if this Book was published before the other
+  /*public boolean publishedBefore(Book that){
+   *   return false;
+   * }
+   * public boolean publishedBefore(Book that){
+   *   FIELDS 
+   *   ...this.year
+   *   ...this.author
+   *   ...this.title
+   *   
+   *   ...that
+   *   ...that.year
+   *   ...that.author
+   *   ...that.title
+       METHODS
+       ...this.sameAuthor()
+       ...that.sameAuthor()
+   * }
+   */
+  public boolean publishedBefore(Book that){
+    return this.year < that.year;
+  }
 }
